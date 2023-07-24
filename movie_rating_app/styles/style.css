@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@200,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+    --font-color: #fff;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    z-index: 2;
+  }
+  
+  .navbar-left h1 {
+    margin: 0;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin-left: 10px;
+  }
+  
+  .navbar-right input[type="text"] {
+    padding: 8px;
+    width: 12rem;
+  }
+  
+  /* Responsive styles for small screens */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      position: sticky;
+    }
+  
+    .navbar-right {
+      margin-top: 10px;
+    }
+  
+    .navbar-right button:last-child {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+
+.container{
+  width: 90%;
+  margin: 0 2rem;
+}
+
+h3:hover{
+  cursor: pointer;
+}
+img:hover{
+  cursor: pointer;
+}
+
+.movie{
+    display: flex;
+    background-color: aquamarine;
+    padding: 0.5rem;
+}
+#movies{
+  text-decoration: var(--font-color);
+  font-weight: 700;
+  font-style: var(--font-color);
+}
+.pagebox{
+  display: flex;
+  justify-content: center;
+  /* align-self: center; */
+  margin: 0.5rem auto;
+  font-size: 1.2rem;
+  width: 14rem;
+  justify-content: space-evenly;
+}
+
+
