@@ -78,6 +78,7 @@ function displayMovies(movies) {
         title.addEventListener('click', () => {
             displayMovieDetails(movie.imdbID);
         });
+        
         posterImg.addEventListener('click', () => {
             displayMovieDetails(movie.imdbID);
         });

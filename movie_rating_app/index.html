@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Rating App</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          
+          <h1>Movie Rating App</h1>
+        </div>
+        <div class="navbar-right">
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Search for movies">
+                <button id="search-btn" onclick="searchMovie()">Search</button>
+            </div>
+        </div>
+      </nav>
+
+
+    <div class="container">
+        <div id="movies">
+            <!-- <div id="poster"></div>
+            <div id="content"></div> -->
+        </div>
+
+        <div class="modal" id="movie-details">
+
+        </div>
+        <div class="modal" id="movie-review">
+
+        </div>
+        <div id="pagination">
+            
+        </div>
+    </div>
+
+    <script src="./components/app.js"></script>
+</body>
+</html>
